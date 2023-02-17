@@ -1,0 +1,21 @@
+.size{
+    font-size: 12px !important;
+}
+.hover-effect-one:hover{
+    background-color: rgb(151, 167, 6);
+}
+.hover-effect-two:hover{
+    background-color: rgb(176, 205, 164);
+}
+.hover-effect-three:hover{
+    background-color: rgb(124, 181, 1);
+}
+.hover-effect-four:hover{
+    background-color: gray;
+}
+.hover-effect-five:hover{
+    background-color: rgb(206, 194, 194);
+}
+.hover-effect-six:hover{
+    background-color: rgb(244, 212, 212);
+}
