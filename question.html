@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-5 Question</title>
+    <!-- Bootsrap cdn link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<body class=" container w-75">
+
+     <div>
+        <h1 class="text-center">Question and Answer seasson</h1>
+        <hr>
+        <div>
+            <h2>What is DOM and what is the purpose of DOM?</h2>
+            <strong>Answer:</strong>
+            <p>
+                <strong>An interface for programming online documents is the Document Object Model (DOM).</strong> It depicts the structure of an HTML or XML document as an object tree, with each object standing in for a different component of the document, such as an element, an attribute, or a text node. It is possible to modify the structure and content of a web page programmatically using the DOM.
+            </p>
+        </div>
+        <div>
+            <h2> How will you select HTML elements using DOM? Name the DOM methods.</h2>
+            <strong>Answer:</strong>
+            <p>
+                <strong>Here are a few of the more popular ones:</strong>
+
+              Using the specific id attribute, the getElementById function chooses an element.
+              
+              An illustration is document.getElementById ("myElement")
+              
+              Using the class attribute, the getElementsByClassName function chooses elements.
+              
+              For instance, use document.getElementsByClassName ("myClass")
+              
+              With the getElementsByTagName function, elements are chosen according to their tag names.
+              
+              For instance, use document.getElementsByTagName ("p")
+              
+              The first element that a specified CSS selector matches is chosen using the querySelector method.
+              
+              For instance, "#myElement" in document.querySelector
+              
+              All elements that match a specified CSS selector are selected by the method querySelectorAll.
+              
+              An illustration is document.querySelectorAll (".myClass")
+        
+              These techniques are used to choose elements from the DOM tree, and they can be combined with other DOM techniques to change, add, or remove elements from the page.
+            </p>
+        </div>
+        <div>
+            <h2> What is event bubble?</h2>
+            <strong>Answer:</strong>
+            <p>
+                <strong> An event that is triggered on one element in the Document Object Model (DOM)</strong> will also trigger on all of that element's ancestor elements up to the document's root due to a phenomena known as event bubbling. This means that when an event takes place on a child element, like a button's click event, it will "bubble up" to the parent element, then the grandparent element, and so on, until it reaches the top of the document tree.
+
+                In order to create interactive online applications, it's crucial to use the event bubbling method, which enables event handling at various DOM levels. A click event can be added to each item in a list, for instance, if you have a list of items.
+            </p>
+        </div>
+        <div>
+            <h2>What is a callback function and why will you use it?</h2>
+            <strong>Answer:</strong>
+            <p>
+                <strong>A callback function is a function </strong>that is supplied as an argument to another function with the idea that it will be invoked at a later time during that function's execution. It is a "called back" function, to put it another way.
+
+                When a function must hold off on performing its own logic until an asynchronous operation is finished, callbacks are frequently employed in asynchronous programming. Asynchronous operation results, such as a server response or a user action, are handled by the callback function.
+                
+                Consider using a callback function for the following reasons:
+                
+                Anytime you must wait for an asynchronous activity to finish, such as a network request or a user action, you are programming in an asynchronous manner.
+            </p>
+        </div>
+     </div>
+
+
+      
+</body>
+</html>
