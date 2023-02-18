@@ -66,7 +66,7 @@ document.getElementById('triangle-calculate').addEventListener('click', function
     
     });
 
-    // pentagon-calculation
+    // Pentagon calculation
     document.getElementById('pentagon-calculation').addEventListener('click', function () {
         incriment++;
         const pentagonP = getValueById('pentagon-input-p');
@@ -75,6 +75,18 @@ document.getElementById('triangle-calculate').addEventListener('click', function
     
        const pentagonTitle = titleElementValueById('pentagon-title');
         displayValueById(incriment,areaValue, pentagonTitle);
+    
+    });
+
+    // Ellipse calculation
+    document.getElementById('ellipse-calculation').addEventListener('click', function () {
+        incriment++;
+        const ellipseA = getValueById('ellipse-input-a');
+        const ellipseB = getValueById('ellipse-input-b');
+        const areaValue = 3.14 * multiplicationValue(ellipseA ,ellipseB);
+    
+       const ellipseTitle = titleElementValueById('ellipse-title');
+        displayValueById(incriment,areaValue, ellipseTitle);
     
     });
 
