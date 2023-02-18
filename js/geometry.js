@@ -193,7 +193,9 @@ document.getElementById('ellipse-calculation').addEventListener('click', functio
         increment++;
         setValueFormulaById('ellipse-a', ellipseA);
         setValueFormulaById('ellipse-b', ellipseB);
-        const areaValue = 3.14 * multiplicationValue(ellipseA, ellipseB);
+        const areaValueString = 3.14 * multiplicationValue(ellipseA, ellipseB);
+        const areaValue = parseFloat(areaValueString).toFixed(2);
+
 
         const ellipseTitle = titleElementValueById('ellipse-title');
         displayValueById(increment, areaValue, ellipseTitle);
