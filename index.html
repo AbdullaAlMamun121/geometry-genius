@@ -19,7 +19,7 @@
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Interactive <br>
                 Geometry Genius</a>
-                <button class="btn btn-success" type="submit">Blog</button>
+            <button class="btn btn-success" type="submit">Blog</button>
         </div>
     </nav>
     <!-- header section start -->
@@ -30,18 +30,19 @@
                 <div class="row row-cols-1 row-cols-md-3 g-1">
                     <!-- card-1 -->
                     <div class="col">
-                        <div class="card h-100 p-2 hover-effect-one">
+                        <div class="card p-2 hover-effect-one">
                             <img src="images/triangle.png" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 id="triangle-title" class="card-title">Triangle</h5>
                                 <p class="card-text">Area (A) = 0.5 &#10060; b &#10060; h</p>
-                            </div>
-                            <div class="input-group mb-3">
-                                <input id="triangle-input-b" type="text" class="form-control m-2 w-25" placeholder="b" aria-label="Username">
-                                <span class="mt-3">cm</span>
+                                <div class="input-group mb-3">
+                                    <input id="triangle-input-b" type="text" class="form-control m-2 w-25 rounded-2"
+                                        placeholder="b" aria-label="Username">
+                                    <span class="mt-3">cm</span>
 
-                                <input id="triangle-input-h" type="text" class="form-control  m-2 w-25" placeholder="h"
-                                    aria-label="Server"><span class="mt-3">cm</span>
+                                    <input id="triangle-input-h" type="text" class="form-control  m-2 w-25 rounded-2"
+                                        placeholder="h" aria-label="Server"><span class="mt-3">cm</span>
+                                </div>
                             </div>
                             <button id="triangle-calculate" type="button" class="btn btn-info">Calculate</button>
                         </div>
@@ -53,13 +54,15 @@
                             <div class="card-body">
                                 <h5 id="rectangle-title" class="card-title">Rectangle</h5>
                                 <p class="card-text">Area (A) =w &#10060;l</p>
-                            </div>
-                            <div class="input-group mb-3">
-                                <input id="rectangle-input-w" type="text" class="form-control m-2 w-25" placeholder="w" aria-label="Username">
-                                <span class="mt-3">cm</span>
+                                <div class="input-group mb-3">
+                                    <input id="rectangle-input-w" type="text" class="form-control m-2 w-25 rounded-2"
+                                        placeholder="w" aria-label="Username">
+                                    <span class="mt-3">cm</span>
 
-                                <input id="rectangle-input-l" type="text" class="form-control  m-2 w-25" placeholder="l"
-                                    aria-label="Server"><span class="mt-3">cm</span>
+                                    <input id="rectangle-input-l" type="text" class="form-control  m-2 w-25 rounded-2"
+                                        placeholder="l" aria-label="Server"><span class="mt-3">cm</span>
+                                </div>
+                                
                             </div>
                             <button id="rectangle-calculation" type="button" class="btn btn-info">Calculate</button>
                         </div>
@@ -71,14 +74,16 @@
                             <div class="card-body">
                                 <h5 id="parallelogram-title" class="card-title">Parallelogram</h5>
                                 <p class="card-text">Area (A) = b &#10060; h </p>
-                                <p>b=10cm, h=12cm</p>
+                                <p class="p-0 m-0">b=10cm, h=12cm</p>
+                                <div class="input-group mb-3">
+                                    <input id="parallelogram-input-b" type="text" class="form-control m-2 w-25 rounded-2"
+                                        placeholder="b" aria-label="Username">
+                                    <span class="mt-3">cm</span>
+                                    <input id="parallelogram-input-h" type="text" class="form-control m-2 w-25 rounded-2"
+                                        placeholder="h" aria-label="Server"><span class="mt-3">cm</span>
+                                </div>
                             </div>
-                            <div class="input-group mb-3">
-                                <input id="parallelogram-input-b" type="text" class="form-control m-2 w-25" placeholder="b" aria-label="Username">
-                                <span class="mt-3">cm</span>
-                                <input id="parallelogram-input-h" type="text" class="form-control  m-2 w-25" placeholder="h"
-                                    aria-label="Server"><span class="mt-3">cm</span>
-                            </div>
+                          
                             <button id="parallelogram-calculation" type="button" class="btn btn-info">Calculate</button>
                         </div>
                     </div>
@@ -90,12 +95,13 @@
                                 <h5 id="rhombus-title" class="card-title">Rhombus</h5>
                                 <p class="card-text">Area (A) = 0.5 &#10060; d <sub>1</sub> &#10060; d <sub>2</sub></p>
                                 <p>d <sub>1</sub>=16cm, d <sub>2</sub>=8cm</p>
-                            </div>
-                            <div class="input-group mb-3">
-                                <input id="rhombus-input-d1" type="text" class="form-control m-2 w-25" placeholder="d1" aria-label="Username">
-                                <span class="mt-3">cm</span>
-                                <input id="rhombus-input-d2" type="text" class="form-control  m-2 w-25" placeholder="d2"
-                                    aria-label="Server"><span class="mt-3">cm</span>
+                                <div class="input-group mb-3">
+                                    <input id="rhombus-input-d1" type="text" class="form-control m-2 w-25 rounded-2" placeholder="d1"
+                                        aria-label="Username">
+                                    <span class="mt-3">cm</span>
+                                    <input id="rhombus-input-d2" type="text" class="form-control m-2 w-25 rounded-2" placeholder="d2"
+                                        aria-label="Server"><span class="mt-3">cm</span>
+                                </div>
                             </div>
                             <button id="rhombus-calculation" type="button" class="btn btn-info">Calculate</button>
                         </div>
@@ -108,12 +114,13 @@
                                 <h5 id="pentagon-title" class="card-title">Pentagon</h5>
                                 <p class="card-text">Area (A) = 0.5 &#10060; p &#10060; b</p>
                                 <p>p=6cm, b=10cm</p>
-                            </div>
-                            <div class="input-group mb-3">
-                                <input id="pentagon-input-p" type="text" class="form-control m-2 w-25" placeholder="p" aria-label="Username">
-                                <span class="mt-3">cm</span>
-                                <input id="pentagon-input-b" type="text" class="form-control  m-2 w-25" placeholder="b"
-                                    aria-label="Server"><span class="mt-3">cm</span>
+                                <div class="input-group mb-3">
+                                    <input id="pentagon-input-p" type="text" class="form-control m-2 w-25 rounded-2" placeholder="p"
+                                        aria-label="Username">
+                                    <span class="mt-3">cm</span>
+                                    <input id="pentagon-input-b" type="text" class="form-control m-2 w-25 rounded-2" placeholder="b"
+                                        aria-label="Server"><span class="mt-3">cm</span>
+                                </div>
                             </div>
                             <button id="pentagon-calculation" type="button" class="btn btn-info">Calculate</button>
                         </div>
@@ -121,18 +128,20 @@
                     <!-- card-6 -->
                     <div class="col">
                         <div class="card h-100 p-2 hover-effect-six">
-                            <img src="images/ellipse.png" class="card-img-top" alt="...">
+                            <img src="images/ellipse.png" class="card-img-top diffrent-style" alt="...">
                             <div class="card-body">
                                 <h5 id="ellipse-title" class="card-title">Ellipse</h5>
                                 <p class="card-text">Area (A) = &#960;ab</p>
                                 <p>a = 10cm, b = 4cm</p>
+                                <div class="input-group mb-3">
+                                    <input id="ellipse-input-a" type="text" class="form-control m-2 w-25 rounded-2" placeholder="a"
+                                        aria-label="Username">
+                                    <span class="mt-3">cm</span>
+                                    <input id="ellipse-input-b" type="text" class="form-control m-2 w-25 rounded-2" placeholder="h"
+                                        aria-label="Server"><span class="mt-3">cm</span>
+                                </div>
                             </div>
-                            <div class="input-group mb-3">
-                                <input id="ellipse-input-a" type="text" class="form-control m-2 w-25" placeholder="a" aria-label="Username">
-                                <span class="mt-3">cm</span>
-                                <input id="ellipse-input-b" type="text" class="form-control  m-2 w-25" placeholder="h"
-                                    aria-label="Server"><span class="mt-3">cm</span>
-                            </div>
+                         
                             <button id="ellipse-calculation" type="button" class="btn btn-info">Calculate</button>
                         </div>
                     </div>
@@ -148,7 +157,7 @@
             </div>
         </section>
     </header>
-   <script src="js/geometry.js"></script> 
+    <script src="js/geometry.js"></script>
 </body>
 
 </html>

@@ -50,7 +50,7 @@ document.getElementById('triangle-calculate').addEventListener('click', function
         const parallelogramH = getValueById('parallelogram-input-h');
         const areaValue =  multiplicationValue(parallelogramB ,parallelogramH);
     
-       const parallelogramTitle = titleElementValueById('rectangle-title');
+       const parallelogramTitle = titleElementValueById('parallelogram-title');
         displayValueById(incriment,areaValue, parallelogramTitle);
     
     });
@@ -95,8 +95,8 @@ function displayValueById(incriment,value,name) {
     const container = document.getElementById('table-container')
     const tr = document.createElement('tr');
     tr.innerHTML = `
-    <td class="p-2">${incriment}</td>
-    <td class="p-2">${value}<span>cm<sup>2</sup></span></td>
+    <td class="p-1">${incriment}</td>
+    <td class="p-1">${value}<span>cm<sup>2</sup></span></td>
     <td class="p-1">${name}</td>
     <td><button class="btn btn-info py-0 size">Convert to m<sup>2</sup></button></td>
     `
