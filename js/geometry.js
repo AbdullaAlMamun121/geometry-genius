@@ -66,6 +66,18 @@ document.getElementById('triangle-calculate').addEventListener('click', function
     
     });
 
+    // pentagon-calculation
+    document.getElementById('pentagon-calculation').addEventListener('click', function () {
+        incriment++;
+        const pentagonP = getValueById('pentagon-input-p');
+        const pentagonB = getValueById('pentagon-input-b');
+        const areaValue = 0.5 * multiplicationValue(pentagonP ,pentagonB);
+    
+       const pentagonTitle = titleElementValueById('pentagon-title');
+        displayValueById(incriment,areaValue, pentagonTitle);
+    
+    });
+
 // common functions for display
 function displayValueById(incriment,value,name) {
     const container = document.getElementById('table-container')
